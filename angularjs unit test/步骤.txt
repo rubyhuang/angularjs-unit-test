@@ -1,0 +1,82 @@
+安装 karma 
+  npm install -g karma --save-dev
+安装 Jasmine
+    npm install karma-jasmine jasmine-core --save-dev
+安装 ngMock
+    npm install angular-mocks --save-dev
+安装 jasmine-jquery
+    bower install jasmine-jquery --save
+
+
+npm install karma-html-detailed-reporter --save-dev
+
+根目录执行
+karma start
+
+
+
+
+
+
+
+
+一些常用的matchers方法。
+
+1、实际值包含期望值。
+
+ expect($djListItems().eq(0).html()).toContain('DStyles<br>\nQbert<br>\nMix Master Mike<br>\nShortkut<br>\nA-Trak<br>\nBabu')
+2、实际值与期望值是否一致。
+
+ expect(element.text()).toBe('iec')
+3、实际值与期望值相等
+
+ expect(scope.emcee.length).toEqual(0)
+4、实际值期望值正则匹配相等
+
+ expect(element.text().toMatch(/Eyadea/))
+5、实际值是否被定义
+
+ expect($cookies.bboy.toBeDefined)
+6、如果实际值没有被定义
+
+ expect($cookiew.bboy).not.toBeDefined()
+7、实际值是否为空
+
+ expect(BreakBeat.tracks()).tobeNull()
+8、实际值是否为不空
+
+expect(BreakBeat.tracks()).not.tobeNull();
+9、实际值是否为false
+
+ expect(element(by.css('button')).getAttribute('disabled').toBeFalsy())
+10、实际值为真
+
+ expect(angular.element(element.find('a')[0].parent().hasClass('nghide').getAttribute('disabled')).toBeTruthy())
+11、实际值少于期望值
+
+ expect(scope.deejays.length).toBeLessThan(2);
+12、实际值大于期望值
+
+ expect(scope.deejays.length).toBeGraterThan(2)
+
+
+
+
+
+
+
+
+
+
+AngularJs单元测试
+https://www.cnblogs.com/laogai/p/5225234.html
+
+基于karma和jasmine的Angularjs 单元测试
+https://www.cnblogs.com/Leo_wl/p/5343182.html
+
+https://jasmine.github.io/pages/docs_home.html
+
+angularJS权威教程自动化测试笔记
+https://blog.csdn.net/u012223913/article/details/50327683
+
+
